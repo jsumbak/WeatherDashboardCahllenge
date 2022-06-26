@@ -1,0 +1,35 @@
+header {
+    background-color: pink;
+    font-size: 30px;
+    text-align: center;
+    margin: 8px;
+    font-family: 'Titan One', cursive;
+}
+
+h1{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.navbar {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.searchbtn{
+    background-color: palevioletred;
+    color: white;
+    position: fixed;
+    margin: 50px;
+    margin-left: 20px;
+    border-radius: 8px;
+    width: 200px;
+}
