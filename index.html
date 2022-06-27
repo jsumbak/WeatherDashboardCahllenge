@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"> -->
     <!-- source for open weather app-->
-    <link href="https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}">
+    <link href="https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=5abd73aeb1b3de420209d0778a1f8ae9">
     <!-- source for Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -20,12 +20,29 @@
     <header>Weather Dashboard</header>
     <h1>Search for a city:</h1>
     <div class="navbar">
-        <input type="text" placeholder="Search..">
+        <input id="city" type="text" placeholder="Search for a city">
     </div>
-    <button class="searchbtn">Search</button>
+    <button class="submitbtn">Submit</button>
 
+    <section>
+        <div class="container">
+            <ul class="cities"></ul>
+        </div>
+    </section>
 
-    <script rel="stylesheet" href="./assets/script.js"></script>
+    <div class="col-12 col-md-8">
+        <div>
+        <h2 class="subtitle">Current Day<span id="current-day"></span></h2>
+        <div id="today-forecast" class="card-group"></div>
+        </div>    
+        <div>
+            <h2 class="day5">5 day forcast</h2>
+            <div id="day5-forcast" class="list-group"></div>
+        </div>    
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" ></script>
+    <script rel="stylesheet" src="./assets/script.js"></script>
 </body>
 
 </html>

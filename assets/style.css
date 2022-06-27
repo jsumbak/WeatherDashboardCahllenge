@@ -5,6 +5,9 @@ header {
     margin: 8px;
     font-family: 'Titan One', cursive;
 }
+p{
+    display: block;
+}
 
 h1{
     font-size: 20px;
@@ -14,22 +17,13 @@ h1{
     margin-left: 15px;
 }
 
-.navbar {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.searchbtn{
+.submitbtn{
     background-color: palevioletred;
     color: white;
     position: fixed;
-    margin: 50px;
-    margin-left: 20px;
+    margin: 5px;
+    margin-left: 15px;
     border-radius: 8px;
     width: 200px;
 }
+
