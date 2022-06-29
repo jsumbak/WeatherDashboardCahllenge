@@ -1,29 +1,49 @@
 header {
     background-color: pink;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     margin: 8px;
     font-family: 'Titan One', cursive;
 }
-p{
-    display: block;
+
+#city {
+    border-radius: 6px;
+    font-size: 25px;
+    font-family: 'Titan One', cursive;
+    margin-left: 16px;
+    border-color: palevioletred;
 }
 
-h1{
-    font-size: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#current-day {
+    display:flex ;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Titan One', cursive;
     text-align: left;
-    font-weight: bold;
-    margin-left: 15px;
+    margin-left: 46px;
+    margin: 15px;
 }
 
-.submitbtn{
+h2 {
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px
+}
+
+.submitbtn {
     background-color: palevioletred;
+    font-size: 22px;
     color: white;
     position: fixed;
-    margin: 5px;
-    margin-left: 15px;
-    border-radius: 8px;
-    width: 200px;
+    margin: 15px;
+    margin-left: 16px;
+    border-radius: 10px;
+    width: 201px;
+    height: 35px;
+    border: none;
 }
-

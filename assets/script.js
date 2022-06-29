@@ -41,6 +41,12 @@ function getApi(city) {
                             var temp = document.createElement("p")
                             temp.innerText = data.current.temp 
                             currentWeather.appendChild(temp)
+                            var humidity = document.createElement("p")
+                            humidity.innerText = data.current.humidity
+                            currentWeather.appendChild(humidity)
+                            var uvIndex = document.createElement("p")
+                            uvIndex.innerText = data.current.uvIndex
+                            currentWeather.appendChild(uvIndex)
                            
                         })
                     })
