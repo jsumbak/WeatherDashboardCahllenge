@@ -9,9 +9,9 @@
     <!-- source for open weather app-->
     <link href="https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=5abd73aeb1b3de420209d0778a1f8ae9">
     <!-- source for Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Rubik+Moonrocks&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Weather Dashboard</title>
 </head>
@@ -25,23 +25,24 @@
     <button class="submitbtn">Submit</button>
 
     <section>
-        <div class="container">
+        <div class="container"> Current Weather
             <ul class="cities"></ul>
         </div>
     </section>
 
     <div class="col-12 col-md-8">
         <div>
-        <h2 class="subtitle"><span id="current-day"></span></h2>
-        <div id="today-forecast" class="card-group"></div>
-        </div>    
+            <h2 class="subtitle"><span id="current-day"></span></h2>
+            <div id="today-forecast" class="card-group"></div>
+            
+        </div>
         <div>
             <h2 class="day5"></h2>
             <div id="day5-forcast" class="list-group"></div>
-        </div>    
+        </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
     <script rel="stylesheet" src="./assets/script.js"></script>
 </body>
 

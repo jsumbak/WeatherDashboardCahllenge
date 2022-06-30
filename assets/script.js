@@ -21,7 +21,6 @@ var formSubmitHandler = function (event) {
     }
 };
 
-
 function getApi(city) {
     var apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&appid=5abd73aeb1b3de420209d0778a1f8ae9";
 
@@ -40,7 +39,7 @@ function getApi(city) {
                             currentWeather.appendChild(cityName)
                             var temp = document.createElement("p")
                             temp.innerText = data.current.temp 
-                            currentWeather.appendChild(temp)
+                            currentWeather.appendChild(temp) 
                             var humidity = document.createElement("p")
                             humidity.innerText = data.current.humidity
                             currentWeather.appendChild(humidity)
@@ -52,12 +51,16 @@ function getApi(city) {
                     })
                 });
             } else {
-                alert('Error: ' + response.statusText);
+                alert('Error:' + response.statusText);
             }
         })
         .catch(function (error) {
             alert('Unable to connect to API');
         });
 };
+
+// function forecast(city) {
+//     var forcastApi = "https://api.openweathermap.org/data/2.5/forecast?q" + city "&appid=5abd73aeb1b3de420209d0778a1f8ae9" + key + "&cnt=5"
+// }
 
 userFormEl.addEventListener('click', formSubmitHandler);
